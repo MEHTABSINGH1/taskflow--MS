@@ -83,12 +83,4 @@ bun dev
 
 Build: `bun run build`. Preview: `bun run preview`.
 
-## Deployment
-
-Click **Publish** in Lovable to deploy the frontend; the backend is already live. The first admin must be promoted from the Cloud dashboard (set the user's role to `admin` in `user_roles`); after that, any admin can promote others from the Users page.
-
-## Conventions
-
-- Roles always live in `user_roles` — never on a profiles/users table.
-- Mutations log an entry via `lib/activity.ts`.
-- All inputs are length-bound; sensitive logic runs server-side under RLS.
+ 
